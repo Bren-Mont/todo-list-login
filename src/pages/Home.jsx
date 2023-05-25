@@ -1,10 +1,10 @@
 import React from 'react'
-import ComposedTextField from '../commons/Inputs'
+import MenuAppBar from '../commons/Navbar'
 
 const Home = () => {
   return (
     <div>
-      <ComposedTextField/>
+      <MenuAppBar/>
     </div>
   )
 }

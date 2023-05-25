@@ -5,7 +5,7 @@ import ButtonSizes from '../commons/Button'
 
 const Login = () => {
   return (
-    <div className='content'>
+    <div >
       <ComposedTextField />
       <ButtonSizes/>
     </div>
