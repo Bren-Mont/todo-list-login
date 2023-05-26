@@ -1,10 +1,24 @@
-import './App.css';
-import Login from './pages/Login';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import "./App.css";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+]);
 
 function App() {
   return (
     <div className="App">
-      <Login/>
+      <RouterProvider router={router} />
     </div>
   );
 }
