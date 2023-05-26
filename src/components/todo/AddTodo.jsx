@@ -38,7 +38,7 @@ const AddTodo = () => {
             id='todoList'
             name='todoList'
             placeholder='Escribe tu tarea'
-            autoComplete='todoList'
+            autoComplete='false'
             className={"todoList"}
             size='small'
           />

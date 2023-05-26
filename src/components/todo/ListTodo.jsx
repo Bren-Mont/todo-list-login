@@ -11,6 +11,8 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
+import DeleteIcon from "@mui/icons-material/Delete";
+
 
 export default function ListTodo() {
   const [checked, setChecked] = React.useState([0]);
@@ -50,12 +52,13 @@ export default function ListTodo() {
           const labelId = `checkbox-list-label-${todo.description}`;
 
           return (
+            
             <ListItem
               key={todo.id}
               secondaryAction={
                 <IconButton edge='end' aria-label='comments'>
-                  <Button size='small' onClick={() => handleDeleteRow(todo.id)}>
-                    Elimina una tarea
+                  <Button endIcon={<DeleteIcon />} size='small' onClick={() => handleDeleteRow(todo.id)}>
+                    
                   </Button>
                 </IconButton>
               }
